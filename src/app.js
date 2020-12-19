@@ -18,11 +18,11 @@ app.set('view engine', 'ejs');
 // MIDDLEWARES
 app.use(morgan('dev'));
 app.use(myConnection(mysql, {
-    host: 'localhost',
-    user: 'root',
-    password: 'Admin123',
-    port: 3306,
-    database: 'Extraclase'
+    host: 'localhost',  // Local Host, este todos lo tenemos igual
+    user: '',           // El usuario de la base de datos
+    password: '',       // Contraseña de ese usuario
+    port: 3306,         // Puerto, puedes cambiarlo si así lo establece tu conexión
+    database: ''        // Nombre de la base de datos
 }, 'single'));
 app.use(express.urlencoded({extended: false}));
 
