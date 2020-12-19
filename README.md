@@ -18,6 +18,8 @@ Por último, se necesita nodemon para el funcionamiento del servidor:
 
 `npm i nodemon -D`
 
+Recuerde que tiene que tener una base de datos y un servidor corriendo en su computador. De no ser así, la conexión no será establecida.
+
 Para correr el servidor, tiene que escribir en la terminal:
 
 `npm run dev`
